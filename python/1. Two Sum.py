@@ -21,4 +21,11 @@ class Solution:
             if target - i in nums[k:]:
                 return [k - 1, nums[k:].index(target - i) + k]
 
+# My first attempt, failed due to time limit exceeding
+# issue was solution used 2 loops
+# for i in range(len(nums)):
+#     for j in range(len(nums)):
+#         if nums[i] + nums[j] == target and i != j:
+#             return [i, j]
+
 # This being the first problem, and labeled easy ain't no joke
